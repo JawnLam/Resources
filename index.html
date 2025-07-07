@@ -14,7 +14,8 @@
             color: #333;
         }
         .hero-section {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://placehold.co/1920x1080/0d2c4b/ffffff?text=Modern+Cityscape') no-repeat center center;
+            /* Removed background image, keeping the gradient for a subtle effect */
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), #0d2c4b; /* Dark blue solid color if gradient is too subtle */
             background-size: cover;
             color: white;
             padding: 8rem 1rem;
@@ -73,15 +74,11 @@
     <section id="about" class="py-16 px-4">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-4xl section-title text-center mb-12">Who We Are</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-                <div class="text-lg leading-relaxed">
-                    <p class="mb-4">Praxis Capital Alpha Partners operates under the independent sponsor model, specializing in identifying, acquiring, managing, and exiting small to medium-sized businesses (SMBs) on behalf of high-net-worth (HNW) professional investors.</p>
-                    <p class="mb-4">Our mission is to empower these investors to achieve superior, diversified returns through active ownership and strategic enhancement of SMBs, leveraging deep operational expertise and proprietary deal flow.</p>
-                    <p>We envision becoming the preeminent independent sponsor firm, recognized for unparalleled value creation, transparent investor partnerships, and a consistent track record of successful business transformations within the lower-middle market.</p>
-                </div>
-                <div class="flex justify-center">
-                    <img src="https://placehold.co/500x300/0d2c4b/ffffff?text=Our+Team" alt="Our Team" class="rounded-xl shadow-lg w-full max-w-md">
-                </div>
+            <!-- Removed grid layout for single column, centered text -->
+            <div class="max-w-3xl mx-auto text-lg leading-relaxed text-center">
+                <p class="mb-4">Praxis Capital Alpha Partners operates under the independent sponsor model, specializing in identifying, acquiring, managing, and exiting small to medium-sized businesses (SMBs) on behalf of high-net-worth (HNW) professional investors.</p>
+                <p class="mb-4">Our mission is to empower these investors to achieve superior, diversified returns through active ownership and strategic enhancement of SMBs, leveraging deep operational expertise and proprietary deal flow.</p>
+                <p>We envision becoming the preeminent independent sponsor firm, recognized for unparalleled value creation, transparent investor partnerships, and a consistent track record of successful business transformations within the lower-middle market.</p>
             </div>
         </div>
     </section>
@@ -150,7 +147,7 @@
                 </div>
                 <div class="card">
                     <h3 class="text-2xl font-semibold mb-3 text-gray-800">Active Operational Management & Value Creation</h3>
-                    <p class="text-gray-600 mb-4">Our commitment extends beyond acquisition to hands-on management and strategic value creation:</p>
+                    <p class="text-600 mb-4">Our commitment extends beyond acquisition to hands-on management and strategic value creation:</p>
                     <ul class="list-disc list-inside text-gray-600 space-y-2">
                         <li>Implementing lean methodologies, cost optimization, and revenue growth strategies.</li>
                         <li>Technology adoption and digital transformation.</li>
